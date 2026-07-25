@@ -1,0 +1,59 @@
+[settings]
+seed = 42
+
+[[entities]]
+name = "player"
+type = "player"
+transform = { position = [0, 1.5, 0], rotation = [0, 0, 0, 1], scale = [1, 1, 1] }
+tags = ["Player", "Camera", "AudioListener"]
+
+[[entities]]
+name = "ground"
+type = "ground"
+transform = { position = [0, 0, 0], scale = [20, 1, 20] }
+color = { r = 0.5, g = 0.45, b = 0.35, a = 1.0 }
+collider = { half_extents = [10, 0.5, 10] }
+tags = ["Ground", "Static"]
+
+[[entities]]
+name = "enemy_01"
+type = "enemy"
+transform = { position = [5, 0, 3], rotation = [0, 0, 0, 1], scale = [1, 1, 1] }
+color = { r = 0.9, g = 0.2, b = 0.2, a = 1.0 }
+collider = { half_extents = [0.5, 0.5, 0.5] }
+script = "enemy"
+
+[[entities]]
+name = "enemy_02"
+type = "enemy"
+transform = { position = [-4, 0, 6], rotation = [0, 0, 0, 1], scale = [1, 1, 1] }
+color = { r = 0.9, g = 0.2, b = 0.2, a = 1.0 }
+collider = { half_extents = [0.5, 0.5, 0.5] }
+script = "enemy"
+
+[[entities]]
+name = "sun"
+type = "sun"
+transform = { position = [5, 10, 5] }
+tags = ["SunLight"]
+
+[[entities]]
+name = "sky"
+type = "sky"
+tags = ["SkySettings"]
+
+[[entities]]
+name = "building_01"
+type = "building"
+transform = { position = [8, 0, 2], scale = [2, 4, 2] }
+color = { r = 0.6, g = 0.6, b = 0.7, a = 1.0 }
+collider = { half_extents = [1, 2, 1] }
+tags = ["Static"]
+
+[[entities]]
+name = "building_02"
+type = "building"
+transform = { position = [-7, 0, -3], scale = [3, 2, 3] }
+color = { r = 0.7, g = 0.6, b = 0.5, a = 1.0 }
+collider = { half_extents = [1.5, 1, 1.5] }
+tags = ["Static"]

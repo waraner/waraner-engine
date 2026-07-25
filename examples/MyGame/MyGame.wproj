@@ -1,0 +1,13 @@
+[project]
+name = "MyGame"
+version = "0.1.0"
+
+[build]
+assets_dir = "assets"
+levels_dir = "levels"
+scripts_dir = "scripts"
+output_dir = "build"
+
+[runtime]
+exe_path = "target/debug/game.exe"
+dll_path = "target/debug/waraner_client.dll"

@@ -1,0 +1,3 @@
+[submodule "libs/noble-physics"]
+	path = libs/noble-physics
+	url = git@github.com:waraner/noble-physics.git
